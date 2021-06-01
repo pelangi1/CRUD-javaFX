@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="addDataLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddDataController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <JFXTextField fx:id="textFieldNim" focusColor="#ff7043" onMouseClicked="#onTextFieldClicked" prefHeight="35.0" prefWidth="300.0" promptText="NIM" />
+            <JFXTextField fx:id="textFieldNama" focusColor="#ff7043" layoutX="30.0" layoutY="20.0" onMouseClicked="#onTextFieldClicked" prefHeight="35.0" prefWidth="300.0" promptText="Nama" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <JFXTextField fx:id="textFieldKeaktifan" focusColor="#ff7043" onMouseClicked="#onTextFieldClicked" prefHeight="35.0" prefWidth="300.0" promptText="Keaktifan" />
+            <JFXTextField fx:id="textFieldQuiz" focusColor="#ff7043" layoutX="30.0" layoutY="20.0" onMouseClicked="#onTextFieldClicked" prefHeight="35.0" prefWidth="300.0" promptText="Quiz" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <JFXTextField fx:id="textFieldUts" focusColor="#ff7043" onMouseClicked="#onTextFieldClicked" prefHeight="35.0" prefWidth="300.0" promptText="UTS" />
+            <JFXTextField fx:id="textFieldUas" focusColor="#ff7043" layoutX="30.0" layoutY="20.0" onMouseClicked="#onTextFieldClicked" prefHeight="35.0" prefWidth="300.0" promptText="UAS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <JFXButton fx:id="buttonAdd" onAction="#onButtonAddClicked" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #ff7043;" text="ADD" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
